@@ -1,6 +1,6 @@
 # Python Quiz
 
-# 1. Accpect two numbers and  print the greatest between them
+# 1. Accept two numbers and print the greatest between them
 
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
