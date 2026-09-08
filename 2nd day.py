@@ -124,5 +124,64 @@ number = int(input("Please Tell Your Number:"))
 
 for i in range(1, number+1):
     if number%i == 0:
-        print(i)
+        print(i, end=" ")
+
+# 13. Accept a number and check if it is a perfect number or not. A number whose sum of factors (excluding number itself)
+
+number = int(input("Please Tell Your Number:"))
+
+sum = 0
+for i in range(1, number):
+    if number % i == 0:
+        sum = sum + i
+
+if sum == number:
+    print(f"{sum} Is Strong number")
+
+else:
+    print(f"{sum} is not strong number")
+
+
+# 14. check If the Number is prime or not.
+
+number = int(input("Please Tell Your Number"))
+
+count = 0
+for i in range(1, number+1):
+    if number%1 == 0:
+        count = count+1
+
+if count == 2:
+    print(f"{count} is your prime number")
+else:
+    print(f"{count} Is composite number")
+
+
+# 15. Sperate each digit of a number and print it on the new line
+
+a = int(input("Please Tell Your Number:"))
+
+while a > 0:
+    print(a%10)
+    a= a//10
+
+# 16. Accept A number and check if it is a pallindromic number (if number and its reverse are equal)
+
+a = int(input("please tell your number:"))
+
+copy = a
+rev = 0
+while a > 0:
+    z = a%10
+    rev = rev * 10 + z
+    a = a//10
+
+if copy == rev:
+    print("Pallaindrmic Number")
+else:
+    print("Not Pallaindrmic Number")
+
+
+
+
 
