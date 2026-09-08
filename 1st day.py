@@ -131,3 +131,15 @@ print("Modulus:", a % b)
 print("Exponentiation:", a ** b)
 print("Floor Division:", a // b)
 
+#Comparison operators in python are: ==, !=, >, <, >=, <=
+
+a = 10
+b = 20
+print("Equal:", a == b)
+print("Not Equal:", a != b)
+print("Greater than:", a > b)
+print("Less than:", a < b)
+print("Greater than or equal to:", a >= b)
+print("Less than or equal to:", a <= b)
+
+
