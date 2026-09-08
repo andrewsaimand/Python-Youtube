@@ -141,5 +141,109 @@ print("Greater than:", a > b)
 print("Less than:", a < b)
 print("Greater than or equal to:", a >= b)
 print("Less than or equal to:", a <= b)
+print(a<b and a!=b)
+print(a>b or a!=b)
+print(not(a<b and a!=b))
 
 
+# Control flow in python is done using the following statements: if, elif, else, for, while, break, continue, pass
+
+a = 10
+if a > 0:
+    print("a is positive") 
+
+a = -10
+if a > 0:
+    print("a is positive")
+else:
+    print("a is not positive")
+
+age = int(input("Enter your age: "))
+if age <= 18:
+    print("You are a minor")
+else:
+    print("You are an adult")
+
+item = input("Enter an item: ")
+if item == "apple":
+    print("You selected an apple")
+elif item == "banana":
+    print("You selected a banana")
+else:
+    print("You selected an unknown item")
+
+
+# Range function in python is used to generate a sequence of numbers. The range() function takes three arguments: start, stop, and step. The start argument is the starting number of the sequence, the stop argument is the ending number of the sequence, and the step argument is the difference between each number in the sequence.
+
+a = range(5)
+print(a) # range(0, 5)
+
+a = range(1, 10, 2)
+print(a) # range(1, 10, 2)
+
+# Converting range to a list
+a = list(range(5))
+print(a) # [0, 1, 2, 3, 4]
+
+a = list(range(1, 10, 2))
+print(a) # [1, 3, 5, 7, 9]
+
+# Iterative statements in python are: for, while, break, continue, pass
+
+# The for loop is used to iterate over a sequence (list, tuple, string, etc.)
+for i in range(5):
+    print(i)
+
+for i in range(13, 150, 13):
+    print(i)
+
+for i in range(1,21,2):
+    print(i)
+
+for i in range(50,0,-2):
+    print(i)
+
+
+# The while loop is used to execute a block of code as long as a condition is true
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+i= 10
+while i > 0:
+    print(i)
+    i -= 1
+
+
+
+# The break statement is used to exit the loop
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+
+a =20
+while a > 0:
+    if a == 10:
+        break
+    print(a)
+    a -= 1
+
+
+# The continue statement is used to skip the current iteration and move to the next iteration
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+
+for i in range(1,15):
+    if i ==5 or i == 7:
+        continue
+    print(i)
+
+# The pass statement is used as a placeholder when a statement is required syntactically but no action is needed
+for i in range(5):
+    if i == 3:
+        pass
+    print(i)

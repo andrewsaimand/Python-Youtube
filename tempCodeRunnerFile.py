@@ -1,9 +1,5 @@
-a = 10
-b = 3
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
-print("Modulus:", a % b)
-print("Exponentiation:", a ** b)
-print("Floor Division:", a // b)
+number = int(input("Please Tell Your Number:"))
+
+for i in range(1, number+1):
+    if number%i == 0:
+        print(i)
